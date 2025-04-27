@@ -1,0 +1,18 @@
+.react-terminal-line {
+    white-space: pre-wrap;
+    word-wrap: break-word;
+}
+
+.react-terminal-input {
+    color: #4CAF50; /* Green color for the prompt */
+}
+
+.dark-link {
+    color: #4FC3F7; /* LinkedIn Blue */
+    text-decoration: none;
+}
+
+.dark-link:hover {
+    color: #81C784; /* GitHub Green */
+    text-decoration: none;
+}
