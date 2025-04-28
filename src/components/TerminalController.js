@@ -76,7 +76,7 @@ const TerminalController = () => {
       <div
           className="container"
           style={{
-            height: '100%', // Make the container fill the entire height of the screen
+            height: '100vh', // Make the container fill the entire height of the screen
             backgroundColor: colorMode === ColorMode.Dark ? '#1e1e1e' : '#f5f5f5', // Set background color based on color mode
             padding: '20px', // Add small gaps around the container
             boxSizing: 'border-box', // Include padding in the element's total width and height
