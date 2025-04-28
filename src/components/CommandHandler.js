@@ -8,13 +8,14 @@ export const commandHandler = (input, colorMode, onHandleClick) => {
     const commands = {
         whoami: [
             <div style={{display: 'flex', justifyContent: 'space-between', alignItems: 'flex-start', width: '100%'}}>
+                <div>
                 <span style={{flex: 1, paddingRight: '20px'}}>
                     <ul>
                     <li>
                         <strong>Backend Engineer</strong> — 4+ Years of Experience
                         <ul>
-                            <li>Currently working at <strong>Amazon</strong> as a Backend Engineer.</li>
-                            <li>Previously worked at <strong>Enphase Energy</strong>, where I was responsible for
+                            {/*<li>Currently working at <strong>Amazon</strong> as a Backend Engineer.</li>*/}
+                            <li>Currently working at <strong>Enphase Energy</strong>, where I was responsible for
                                 architecting and building scalable backend systems.
                             </li>
                             <li>Experience in building microservices, REST APIs, and distributed systems.</li>
@@ -55,7 +56,7 @@ export const commandHandler = (input, colorMode, onHandleClick) => {
                     </li>
                 </ul>
             </span>
-
+            </div>
                 <div>
                     <img src="profile.jpeg" alt="Your Image" class="profile-photo"/>
                 </div>
@@ -66,17 +67,17 @@ export const commandHandler = (input, colorMode, onHandleClick) => {
             (
             <span>
             <ul>
-                <li>
-                    <strong>SDE II</strong> — Amazon, AVS Team (2025 - Present)
-                    <ul>
-                        <li>Building backend services for AVS to enhance vendor integrations.
-                        </li>
-                    </ul>
-                </li>
+                {/*<li>*/}
+                {/*    <strong>SDE II</strong> — Amazon, AVS Team (2025 - Present)*/}
+                {/*    <ul>*/}
+                {/*        <li>Building backend services for AVS to enhance vendor integrations.*/}
+                {/*        </li>*/}
+                {/*    </ul>*/}
+                {/*</li>*/}
                 <br/>
 
                 <li>
-                    <strong>Staff Engineer</strong> — Enphase Energy (2024 - 2025)
+                    <strong>Staff Engineer</strong> — Enphase Energy (2024 - Present)
                     <ul>
                         <li>Designed horizontally scalable Site Search Microservice using OpenSearch and Kafka for
                             real-time syncing.
