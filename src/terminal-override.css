@@ -16,3 +16,17 @@
     color: #81C784; /* GitHub Green */
     text-decoration: none;
 }
+
+/*.react-terminal-wrapper {*/
+/*    height: 100%;*/
+/*}*/
+
+/*.right-align {*/
+/*    float: right;*/
+/*    text-align: right;*/
+/*}*/
+
+.react-terminal-active-input {
+/*    Placedholder text for active input*/
+
+}
