@@ -67,9 +67,9 @@ export const commandHandler = (input, colorMode, onHandleClick) => {
             <span>
             <ul>
                 <li>
-                    <strong>SDE II</strong> — Amazon, AVS Team (2024 - Present)
+                    <strong>SDE II</strong> — Amazon, AVS Team (2025 - Present)
                     <ul>
-                        <li>Building backend services for AVS to enhance vendor integrations and large-scale workflow
+                        <li>Building backend services for AVS to enhance vendor integrations.
                             automation.
                         </li>
                     </ul>
@@ -77,7 +77,7 @@ export const commandHandler = (input, colorMode, onHandleClick) => {
                 <br/>
 
                 <li>
-                    <strong>Staff Engineer</strong> — Enphase Energy (2024 - Present)
+                    <strong>Staff Engineer</strong> — Enphase Energy (2024 - 2025)
                     <ul>
                         <li>Designed horizontally scalable Site Search Microservice using OpenSearch and Kafka for
                             real-time syncing.
