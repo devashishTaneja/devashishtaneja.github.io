@@ -262,7 +262,7 @@ export const commandHandler = (input, colorMode, onHandleClick) => {
                 <span>
                     {commands[cmd][0]}
                     <br/> <br/>
-                    {linkToAction('more', colorMode, onHandleClick, 'Click here awesome stuff 👇')}
+                    {linkToAction('more', colorMode, onHandleClick, 'Click here for more awesome stuff 👇')}
                 </span>
             );
         }
