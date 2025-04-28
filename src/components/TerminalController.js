@@ -3,6 +3,7 @@ import React, { useState } from 'react';
 import Terminal, { ColorMode, TerminalInput, TerminalOutput } from 'react-terminal-ui';
 import { commandHandler } from './CommandHandler';
 import { linkToAction } from '../utils/LinkHandler';
+import {FaSun, FaMoon} from 'react-icons/fa';
 
 const TerminalController = () => {
     const [colorMode, setColorMode] = useState(ColorMode.Dark);
@@ -30,7 +31,7 @@ const TerminalController = () => {
     const defaultTextOnClear = [
         <TerminalOutput key="welcome">
             <div style={{paddingLeft: '15px'}}>
-                Hey, hey! Welcome to Devashish's Terminal 🚀 💻.
+                Hey, hey! Welcome to Devashish's Terminal 🚀 💻
             </div>
             <div style={{paddingLeft: '15px'}}>
                 Need help? Just type {linkToAction("help", colorMode, handleLinkClick)} and we’ll pretend to know what we’re doing. 🤫✨
@@ -76,7 +77,7 @@ const TerminalController = () => {
           className="container"
           style={{
             height: '100vh', // Make the container fill the entire height of the screen
-            backgroundColor: '#111', // Dark background for the terminal
+            backgroundColor: colorMode === ColorMode.Dark ? '#1e1e1e' : '#f5f5f5', // Set background color based on color mode
             padding: '20px', // Add small gaps around the container
             boxSizing: 'border-box', // Include padding in the element's total width and height
           }}
@@ -88,11 +89,6 @@ const TerminalController = () => {
             startingInputValue="whoami"
             height="900px"
             style={{
-              // height: '100%', // Make the terminal fill the container height
-              // width: '100%', // Make the terminal fill the container width
-              // borderRadius: '20px', // Optional: Add rounded corners for a nicer effect
-              // padding: '20px', // Add padding inside the terminal to create small gaps around the content
-              // boxSizing: 'border-box', // Make sure padding is included in the element's total width and height
                 flex: 1, // Make the terminal fill available space
                 width: '100%', // Ensure it takes full width
                 borderRadius: '20px', // Optional: rounded corners

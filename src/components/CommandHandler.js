@@ -91,7 +91,7 @@ export const commandHandler = (input, colorMode, onHandleClick) => {
         ],
         todo: [
             <span>
-                'Today's ToDo'
+                <span style={{ marginRight: '40px'}}>Today's ToDo list:</span>
                 <ol>
                     <li>Drink coffee ☕</li>
                     <li>Write code 💻</li>
@@ -262,6 +262,7 @@ export const commandHandler = (input, colorMode, onHandleClick) => {
                 <span>
                     {commands[cmd][0]}
                     <br/> <br/>
+                    <span style={{marginRight: '20px', color: '#00ff00'}}></span>
                     {linkToAction('more', colorMode, onHandleClick, 'Click here for more awesome stuff 👇')}
                 </span>
             );

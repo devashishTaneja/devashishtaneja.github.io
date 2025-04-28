@@ -16,17 +16,12 @@
     color: #81C784; /* GitHub Green */
     text-decoration: none;
 }
+.light-link {
+    color: #039BE5; /* Darker LinkedIn Blue */
+    text-decoration: none;
+}
 
-/*.react-terminal-wrapper {*/
-/*    height: 100%;*/
-/*}*/
-
-/*.right-align {*/
-/*    float: right;*/
-/*    text-align: right;*/
-/*}*/
-
-.react-terminal-active-input {
-/*    Placedholder text for active input*/
-
+.light-link:hover {
+    color: #388E3C; /* Darker GitHub Green */
+    text-decoration: none;
 }
