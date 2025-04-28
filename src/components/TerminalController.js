@@ -21,7 +21,7 @@ const TerminalController = () => {
                 Need help? Just press Enter and we’ll pretend to know what we’re doing. 🤫✨
             </div>
             <div style={{paddingLeft: '15px'}}>
-                (No judgment, we promise 😎)
+                (No judgment, I promise 😎)
             </div>
             <br/>
         </TerminalOutput>,
