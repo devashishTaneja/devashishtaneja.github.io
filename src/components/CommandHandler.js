@@ -7,8 +7,9 @@ export const commandHandler = (input, colorMode, onHandleClick) => {
 
     const commands = {
         whoami: [
-            <span>
-                <ul>
+            <div style={{display: 'flex', justifyContent: 'space-between', alignItems: 'flex-start', width: '100%'}}>
+                <span style={{flex: 1, paddingRight: '20px'}}>
+                    <ul>
                     <li>
                         <strong>Backend Engineer</strong> — 4+ Years of Experience
                         <ul>
@@ -54,69 +55,13 @@ export const commandHandler = (input, colorMode, onHandleClick) => {
                     </li>
                 </ul>
             </span>
+
+                <div>
+                    <img src="profile.jpeg" alt="Your Image" class="profile-photo"/>
+                </div>
+            </div>
             ,
             'Get to know about yours truly 🧐'],
-
-        linkedin: [
-            (
-                <span>
-                    Ah, looking for my professional side? Here’s my LinkedIn:
-                    <a href="https://linkedin.com/dtaneja123" target="_blank" rel="noopener noreferrer"
-                       className={colorMode === ColorMode.Dark ? 'dark-link' : 'light-link'}> Devashish Taneja <FaLinkedin/> </a>
-                </span>
-
-            ),
-            'Where I pretend to be professional 👔'
-        ],
-        github: [
-            (
-                <span>
-                    Oh, you want to peek into my code, huh? Here's my GitHub:
-                    <a href="https://github.com/devashishTaneja" target="_blank" rel="noopener noreferrer"
-                       className={colorMode === ColorMode.Dark ? 'dark-link' : 'light-link'}> Devashish Taneja <FaGithub/> </a>
-                </span>
-            ),
-            "My code, my mess 💻"
-        ],
-        music: [
-            (
-                <span>
-                        Time to jam out! Here’s my Playlist:
-                        <a href="https://music.youtube.com/playlist?list=PL5BwGpDR1UK63eCMc81cre-c-cEG_npCv&si=XBvgH-cJDtFv-b8Z/"
-                           target="_blank" rel="noopener noreferrer"
-                           className={colorMode === ColorMode.Dark ? 'dark-link' : 'light-link'} right-align> Devashish Taneja <FaYoutubeSquare/> </a>
-                    </span>
-            ),
-            "Jams that fuel the chaos 🎶"
-        ],
-        todo: [
-            <span>
-                <span style={{ marginRight: '40px'}}>Today's ToDo list:</span>
-                <ol>
-                    <li>Drink coffee ☕</li>
-                    <li>Write code 💻</li>
-                    <li>Break things 🔥</li>
-                </ol>
-            </span>,
-            'My never-ending battle list 📋'
-        ],
-        contact: [
-            (<span>
-                <ul>
-                    <li>GitHub: <a href="https://github.com/devashishTaneja" target="_blank" rel="noopener noreferrer"
-                                  className={colorMode === ColorMode.Dark ? 'dark-link' : 'light-link'}> Devashish Taneja <FaGithub/> </a></li>
-                    <li>LinkedIn: <a href="https://linkedin.com/in/dtaneja123" target="_blank" rel="noopener noreferrer"
-                                     className={colorMode === ColorMode.Dark ? 'dark-link' : 'light-link'}> Devashish Taneja <FaLinkedin/> </a></li>
-                    <li>Email: <a href="mailto:taneja.devashish@gmail.com" target="_blank" rel="noopener noreferrer"
-                                  className={colorMode === ColorMode.Dark ? 'dark-link' : 'light-link'} > taneja.devashish@gmail.com <FaEnvelope/></a> </li>
-                </ul>
-            </span>),
-            'Send me a digital pigeon 🕊️'
-        ],
-        clear: [
-            'clear',
-            'Clear the ground 🧹'
-        ],
         experience: [
             (
             <span>
@@ -210,10 +155,69 @@ export const commandHandler = (input, colorMode, onHandleClick) => {
         ),
             'Giving back, one bug at a time 🐞'
         ],
-        'ls': []
+        contact: [
+            (<span>
+                <ul>
+                    <li>GitHub: <a href="https://github.com/devashishTaneja" target="_blank" rel="noopener noreferrer"
+                                   className={colorMode === ColorMode.Dark ? 'dark-link' : 'light-link'}> Devashish Taneja <FaGithub/> </a></li>
+                    <li>LinkedIn: <a href="https://linkedin.com/in/dtaneja123" target="_blank" rel="noopener noreferrer"
+                                     className={colorMode === ColorMode.Dark ? 'dark-link' : 'light-link'}> Devashish Taneja <FaLinkedin/> </a></li>
+                    <li>Email: <a href="mailto:taneja.devashish@gmail.com" target="_blank" rel="noopener noreferrer"
+                                  className={colorMode === ColorMode.Dark ? 'dark-link' : 'light-link'} > taneja.devashish@gmail.com <FaEnvelope/></a> </li>
+                </ul>
+            </span>),
+            'Send me a digital pigeon 🕊️'
+        ],
+        linkedin: [
+            (
+                <span>
+                    Ah, looking for my professional side? Here’s my LinkedIn:
+                    <a href="https://linkedin.com/dtaneja123" target="_blank" rel="noopener noreferrer"
+                       className={colorMode === ColorMode.Dark ? 'dark-link' : 'light-link'}> Devashish Taneja <FaLinkedin/> </a>
+                </span>
 
+            ),
+            'Where I pretend to be professional 👔'
+        ],
+        github: [
+            (
+                <span>
+                    Oh, you want to peek into my code, huh? Here's my GitHub:
+                    <a href="https://github.com/devashishTaneja" target="_blank" rel="noopener noreferrer"
+                       className={colorMode === ColorMode.Dark ? 'dark-link' : 'light-link'}> Devashish Taneja <FaGithub/> </a>
+                </span>
+            ),
+            "My code, my mess 💻"
+        ],
+        music: [
+            (
+                <span>
+                        Time to jam out! Here’s my Playlist:
+                        <a href="https://music.youtube.com/playlist?list=PL5BwGpDR1UK63eCMc81cre-c-cEG_npCv&si=XBvgH-cJDtFv-b8Z/"
+                           target="_blank" rel="noopener noreferrer"
+                           className={colorMode === ColorMode.Dark ? 'dark-link' : 'light-link'} right-align> Devashish Taneja <FaYoutubeSquare/> </a>
+                    </span>
+            ),
+            "Jams that fuel the chaos 🎶"
+        ],
+        todo: [
+            <span>
+                <span style={{ marginRight: '40px'}}>Today's ToDo list:</span>
+                <ol>
+                    <li>Drink coffee ☕</li>
+                    <li>Write code 💻</li>
+                    <li>Break things 🔥</li>
+                </ol>
+            </span>,
+            'My never-ending battle list 📋'
+        ],
+        ls: [],
+        clear: [
+            'clear',
+            'Clear the ground 🧹'
+        ],
 
-};
+    };
 
     const availableCommands = Object.keys(commands);
 
