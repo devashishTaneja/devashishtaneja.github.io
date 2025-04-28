@@ -70,7 +70,6 @@ export const commandHandler = (input, colorMode, onHandleClick) => {
                     <strong>SDE II</strong> — Amazon, AVS Team (2025 - Present)
                     <ul>
                         <li>Building backend services for AVS to enhance vendor integrations.
-                            automation.
                         </li>
                     </ul>
                 </li>
